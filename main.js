@@ -31,7 +31,7 @@ const question2 = new Question(
     "Shishkali"
 )
 
-const questions = [question1, question2];
+let questions = [question1, question2];
 //this array will hold all questions
 
 let score = 0;
@@ -118,9 +118,9 @@ function endGame () {
 }
 
 function newGame () {
-    const questions = [question1, question2];
-    let score = 0;
-    let questions_asked = 0;
-    let currentQuestion = questions.pop();
+    questions = [question1, question2];
+    score = 0;
+    questions_asked = 0;
+    currentQuestion = questions.pop();
     nextQuestion();
 }
