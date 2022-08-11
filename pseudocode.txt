@@ -1,0 +1,23 @@
+when page is loaded
+    render introductory text and start button
+if ('start' is pressed)
+    while (number_of_questions_asked < 10)
+        choose question at random
+            function includes checking if question has been asked
+        mark question as asked
+        increment number_of_questions_asked
+        render question, answer choices, and submit button
+        if (submit is pressed)
+            if (an answer is selected)
+                check answer
+                if (answer is correct)
+                    increment score
+                    display 'correct'
+                else
+                    display 'incorrect' and correct answer
+            else 
+                display 'please choose an answer
+    display final score, achievement level, and new game button
+    
+
+

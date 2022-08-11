@@ -1,0 +1,25 @@
+// PRELIMINARY PSEUDO-PSEUDOCODE
+
+introductory text and in question pane
+'Click start to begin and 'start' button in answer pane
+
+start game
+
+while question number is less than 10
+    random choice from question pool is made
+        that question is recorded as used
+    question text appears in question pane
+    answer options & radio button appear & 'submit' button in answer pane
+    user submits answer
+    answer checked
+        correct answer increments score
+    display whether correct or incorrect at bottom of question pane
+    if question just answered < 10
+        display 'next' button
+    else 
+        display 'results' button
+
+display overall score and classification in ranking
+
+display new game button in transparent answer pane
+
