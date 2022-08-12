@@ -31,7 +31,71 @@ const question2 = new Question(
     "Shishkali"
 )
 
-let questions = [question1, question2];
+const question3 = new Question(
+    3,
+    "In Heretics of Dune, what is the name of the Supreme Bashar of the Bene Gesserit military forces?",
+    ['Miles Teg', 'Darwi Odrade', 'Alef Burzmali', 'Tylwyth Waff'],
+    "A",
+    "Miles Teg"
+)
+
+const question4 = new Question(
+    4,
+    "In Dune Messiah, what name do the Bene Tleilax give to the Duncan Idaho ghola?",
+    ['Otheym', 'Korba', 'Bijaz', 'Hayt'],
+    "D",
+    "Hayt"
+)
+
+const question5 = new Question(
+    5,
+    "What is the Bene Gesserit Missionaria Protectiva?",
+    ['A breeding program', 'A form of espionage', 'A program of religious engineering', 'A military campaign'],
+    "C",
+    "a program of religious engineering"
+)
+
+const question6 = new Question(
+    6,
+    "What type of Ixian starship is invisible to prescient vision?",
+    ['A heighliner', 'A no-ship', 'A spice shuttle', 'A defender ship'],
+    "B",
+    "a no-ship"
+)
+
+const question7 = new Question(
+    7,
+    "What type of genetically-engineered animals are used in the assassination attempt on Leto II and Ghanima?",
+    ['Laza tigers', 'D-wolves', 'Chairdogs', 'Futars'],
+    "A",
+    "laza tigers"
+)
+
+const question8 = new Question(
+    8,
+    "What is Dr. Liet Kynes' field of expertise?",
+    ['Medicine', 'Organic chemistry', 'Planetary ecology', 'Geology'],
+    "C",
+    "planetary ecology"
+)
+
+const question9 = new Question(
+    9,
+    "In Dune Messiah, which sense does Paul Muad'Dib lose?",
+    ['Hearing', 'Sight', 'Taste', 'Smell'],
+    "B",
+    "sight"
+)
+
+const question10 = new Question(
+    10,
+    "In Dune, who is the Warmaster for House Atreides?",
+    ['Duncan Idaho', 'Thufir Hawat', 'Hasimir Fenring', 'Gurney Halleck'],
+    "D",
+    "Gurney Halleck"
+)
+
+let questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10];
 //this array will hold all questions
 
 let score = 0;
@@ -118,7 +182,7 @@ function endGame () {
 }
 
 function newGame () {
-    questions = [question1, question2];
+    questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10];
     score = 0;
     questions_asked = 0;
     currentQuestion = questions.pop();
