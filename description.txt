@@ -1,1 +1,0 @@
-Dune Trivia is a trivia game covering all six of Frank Herbert's Dune books. Players will be asked ten questions chosen from a larger question pool. At the end of the game the player will see their score and the thematic ranking they achieved.

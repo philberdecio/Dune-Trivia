@@ -3,12 +3,18 @@
 body {
     background-image: url(background.jpg);
 }
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
+
 .panes {
     display: flex;
     flex-direction: row;
@@ -29,9 +35,9 @@ body {
     font-family: 'Inter', sans-serif;
 
 }
+
 .subheading {
     font-family: 'Inter', sans-serif;
-
 }
 
 .question {
@@ -65,11 +71,6 @@ body {
     text-align: center;
 }
 
-p {
-    font-family: 'Inter', sans-serif;
-}
-
-
 fieldset {
     outline: none;
     border: none;
@@ -85,4 +86,8 @@ fieldset {
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+}
+
+#display-result{
+    margin: 0px 0px 10px 0px;
 }

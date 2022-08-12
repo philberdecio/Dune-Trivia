@@ -50,9 +50,9 @@ const question4 = new Question(
 const question5 = new Question(
     5,
     "What is the Bene Gesserit Missionaria Protectiva?",
-    ['A breeding program', 'A form of espionage', 'A program of religious engineering', 'A military campaign'],
+    ['A breeding program', 'Espionage', 'Religious engineering', 'A military campaign'],
     "C",
-    "a program of religious engineering"
+    "religious engineering"
 )
 
 const question6 = new Question(
@@ -96,7 +96,6 @@ const question10 = new Question(
 )
 
 let questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10];
-//this array will hold all questions
 
 let score = 0;
 let questions_asked = 0;
@@ -127,7 +126,6 @@ function nextQuestion() {
     submitButton.addEventListener("click",(e) => {
         e.preventDefault();
         for (let i = 0; i < radios.length; i++) {
-            console.log(`length: ${radios.length}`)
             if (radios[i].checked === true) {
                 if (radios[i].value === currentQuestion.answer) {
                         document.querySelector("#display-result").innerText = "Correct!"
