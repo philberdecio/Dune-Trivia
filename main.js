@@ -132,11 +132,13 @@ function nextQuestion() {
                 if (radios[i].value === currentQuestion.answer) {
                         document.querySelector("#display-result").innerText = "Correct!"
                         score++;
+                        document.querySelector("#submit-div").innerHTML = "";
                         document.querySelector("#button-div").innerHTML = `<button id ="next-button" type="button">Next</button>`
                         document.querySelector("#next-button").addEventListener("click", checkNext);
                         
                     } else if (radios[i] !== currentQuestion.answer) {
                         document.querySelector("#display-result").innerText = `Incorrect! The correct answer is ${currentAnswer}`;
+                        document.querySelector("#submit-div").innerHTML = "";
                         document.querySelector("#button-div").innerHTML = `<button id ="next-button" type="button">Next</button>`
                         document.querySelector("#next-button").addEventListener("click", checkNext);
                         
@@ -159,11 +161,11 @@ function renderQuestion (questionObject) {
     let answer2 = questionObject.choices[1];
     let answer3 = questionObject.choices[2];
     let answer4 = questionObject.choices[3];
-    fieldSet.innerHTML = `<input type="radio" id="choice-A" name="choices" value="A"></input>
-    <label class = "labels" id="label-a" for="A">${answer1}</label><input type="radio" id="choice-B" name="choices" value="B"></input>
-    <label class = "labels" id = "label-b" for="B">${answer2}</label><input type="radio" id="choice-C" name="choices" value="C"></input>
-    <label class = "labels" id="label-c" for="C">${answer3}</label><input type="radio" id="choice-D" name="choices" value="D"></input>
-    <label class = "labels" id="label-d" for="D">${answer4}</label><button id="toSubmit" type="submit" form="answers-form">Submit</button>`
+    fieldSet.innerHTML = `<div><input type="radio" id="choice-A" name="choices" value="A"></input>
+    <label class = "labels" id="label-a" for="A">${answer1}</label></div><div><input type="radio" id="choice-B" name="choices" value="B"></input>
+    <label class = "labels" id = "label-b" for="B">${answer2}</label></div><div><input type="radio" id="choice-C" name="choices" value="C"></input>
+    <label class = "labels" id="label-c" for="C">${answer3}</label></div><div><input type="radio" id="choice-D" name="choices" value="D"></input>
+    <label class = "labels" id="label-d" for="D">${answer4}</label></div><div id="submit-div"><button id="toSubmit" type="submit" form="answers-form">Submit</button></div>`
 }
 
 function endGame () {

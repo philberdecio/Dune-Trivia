@@ -2,10 +2,7 @@ when page is loaded
     render introductory text and start button
 if ('start' is pressed)
     while (number_of_questions_asked < 10)
-        choose question at random
-            function includes checking if question has been asked
-        mark question as asked
-        increment number_of_questions_asked
+        get question
         render question, answer choices, and submit button
         if (submit is pressed)
             if (an answer is selected)
