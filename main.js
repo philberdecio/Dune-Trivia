@@ -1,18 +1,13 @@
 class Question {
     constructor(number, question, choices, answer, answerDisplay) {
         this.number = number;
-        // integer
         this.question = question;
-        // string
         this.choices = choices;
-        // array of strings
         this.answer = answer;
-        // integer referencing index in answers array
         this.answerDisplay = answerDisplay;
     }
 }
 
-//single question for testing below
 
 const question1 = new Question(
     1,
