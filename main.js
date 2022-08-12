@@ -9,7 +9,6 @@ class Question {
         this.answer = answer;
         // integer referencing index in answers array
         this.answerDisplay = answerDisplay;
-        this.asked = false;
     }
 }
 
